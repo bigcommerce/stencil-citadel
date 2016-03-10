@@ -1,0 +1,101 @@
+/*doc
+---
+title: ActionBar
+name: action_bar
+category: Patterns
+---
+```html_example
+<form class="actionBar">
+    <fieldset class="form-fieldset actionBar-section">
+        <div class="form-field">
+            <button class="button" type="submit">
+                Add
+            </button>
+            <button class="button button--icon">
+                <span class="u-hiddenVisually">Remove</span>
+                <icon glyph="ic-delete"></icon>
+            </button>
+        </div>
+    </fieldset>
+
+    <fieldset class="form-fieldset actionBar-section">
+        <div class="form-field">
+            <select class="form-select" name="select1" id="select1">
+                <option>Choose an action</option>
+                <option value="1">Bulk Edit Selected</option>
+                <option value="2">Label all options</option>
+            </select>
+        </div>
+    </fieldset>
+
+    <fieldset class="form-fieldset actionBar-section">
+        <div class="form-field">
+            <input class="form-input has-action"
+                   placeholder="Filter"
+                   type="search">
+            <button class="button button--icon button--inputAction">
+                <span class="u-hiddenVisually">Filter</span>
+                <icon glyph="ic-filter-list"></icon>
+            </button>
+        </div>
+    </fieldset>
+
+    <a class="actionBar-section" href="#">
+        Search
+    </a>
+
+</form>
+```
+
+```sass_file_example
+src/settings/bigcommerce/actionBar/_settings.scss
+```
+*/
+
+// =============================================================================
+// ACTION BAR (CSS)
+// =============================================================================
+
+
+// Bigcommerce Component
+// -----------------------------------------------------------------------------
+//
+// The Bigcommerce Coding Standards, coupled with Foundation.
+// If any library overrides or extra CSS is needed, declare it here.
+//
+// 1. If set to false, there is no outputted CSS for this component.
+//
+// -----------------------------------------------------------------------------
+
+@if $exportCSS--actionBar { // 1
+
+    .actionBar {
+        @include clearfix;
+        padding: $actionBar-padding;
+
+        .form-field {
+            margin: $actionBar-form-field-margin;
+        }
+
+        .button {
+            margin-bottom: $actionBar-button-margin;
+        }
+
+        a {
+            padding: $actionBar-text-padding;
+        }
+    }
+
+    .actionBar-section {
+        float: $actionBar-section-float;
+
+        + .actionBar-section {
+            margin-#{$actionBar-section-float}: $actionBar-section-gutter;
+        }
+    }
+
+    .actionBar-section--alt {
+        float: $actionBar-section-float--alt;
+    }
+
+}

@@ -1,0 +1,40 @@
+// Citadel
+// -----------------------------------------------------------------------------
+//
+// Purpose: Build a vanilla Citadel
+//
+// -----------------------------------------------------------------------------
+
+
+// =============================================================================
+// Tools
+// =============================================================================
+
+// citadel BC Toolkit
+@import "tools/toolkit";
+
+
+// =============================================================================
+// SETTINGS
+// =============================================================================
+
+// citadel Settings
+@import "settings/global/global";
+
+// citadel Foundation Settings
+@import "settings/foundation/foundation";
+
+// citadel BC Component Settings
+@import "settings/bigcommerce/bigcommerce";
+
+// Normalize Settings
+@import "settings/normalize/normalize";
+
+
+// =============================================================================
+// Components
+// =============================================================================
+
+// citadel Components bundle.
+@import "library-components-only";
+

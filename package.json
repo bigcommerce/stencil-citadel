@@ -1,0 +1,40 @@
+{
+  "name": "@bigcommerce/citadel",
+  "version": "2.11.5",
+  "description": "A SASS Library based on Foundation with opinionated naming conventions",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bigcommerce/citadel.git"
+  },
+  "author": "Bigcommerce",
+  "license": "BSD-4-Clause",
+  "bugs": {
+    "url": "https://github.com/bigcommerce/citadel/issues"
+  },
+  "homepage": "https://github.com/bigcommerce/citadel",
+  "devDependencies": {
+    "bower": "1.3.12",
+    "grunt": "0.4.5",
+    "grunt-browser-sync": "^2.1.3",
+    "grunt-bump": "git://github.com/meenie/grunt-bump.git#0.0.16",
+    "grunt-checkbranch": "0.3.1",
+    "grunt-cli": "0.1.13",
+    "grunt-contrib-clean": "0.6.0",
+    "grunt-contrib-copy": "0.6.0",
+    "grunt-contrib-watch": "0.6.1",
+    "grunt-hologram": "0.0.7",
+    "grunt-newer": "^1.1.0",
+    "grunt-prompt": "1.2.1",
+    "grunt-sass": "^1.1.0",
+    "grunt-scss-lint": "0.3.3",
+    "load-grunt-config": "0.13.2",
+    "semver": "4.0.3",
+    "time-grunt": "1.0.0"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "scripts": {
+    "test": "grunt scsslint"
+  }
+}

@@ -1,0 +1,29 @@
+// =============================================================================
+// ACTION BAR (Settings)
+// =============================================================================
+
+
+// Bigcommerce Variables
+// -----------------------------------------------------------------------------
+//
+// These scoped variables are created by Bigcommerce.
+// All variables that are not from Foundation should be placed here.
+//
+// 1. Choose whether to include the Bigcommerce class names
+//
+// -----------------------------------------------------------------------------
+
+$exportCSS--actionBar:                          $exportCSS !default;
+
+$actionBar-padding-horizontal:                  0 !default;
+$actionBar-padding-vertical:                    spacing("half") !default;
+$actionBar-padding:                             $actionBar-padding-vertical $actionBar-padding-horizontal !default;
+
+$actionBar-section-float:                       $default-float !default;
+$actionBar-section-float--alt:                  $opposite-direction !default;
+$actionBar-section-gutter:                      spacing("single") !default;
+
+$actionBar-form-field-margin:                   0 !default;
+$actionBar-button-margin:                       0 !default;
+
+$actionBar-text-padding:                        spacing("half") 0 !default;

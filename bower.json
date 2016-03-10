@@ -1,0 +1,28 @@
+{
+    "name": "citadel",
+    "version": "2.11.5",
+    "homepage": "https://github.com/bigcommerce/citadel.git",
+    "authors": [
+        "Bigcommerce"
+    ],
+    "description": "A SASS Library based on Foundation with opinionated naming conventions",
+    "main": "library.scss",
+    "license": "MIT",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "build",
+        "grunt",
+        "src",
+        "node_modules",
+        "bower_components",
+        "tests",
+        "Gemfile",
+        "Gemfile.lock",
+        "package.json",
+        "Gruntfile.js"
+    ],
+    "devDependencies": {
+        "foundation": "5.5.3"
+    }
+}

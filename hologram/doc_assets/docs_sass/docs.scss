@@ -1,0 +1,135 @@
+// some stuff
+
+@import "../../../src/citadel";
+
+
+.docs {
+
+    .container {
+        @include grid-row();
+    }
+
+    .content {
+        @include grid-column(12);
+    }
+
+
+    //
+    // type
+    // -----------------------------------------------------------------------------
+
+    div + h1.styleguide {
+        margin-top: spacing("double") * 2;
+    }
+
+
+    //
+    // Docs Header
+    // -----------------------------------------------------------------------------
+
+    .docs-header-navBar {
+
+        background-color: color("greys", "light");
+        margin-bottom: spacing("double");
+        padding: 0 spacing("single");
+
+        .navBar-section {
+            display: inline-block;
+            float: none;
+            vertical-align: middle;
+        }
+    }
+
+    .docs-header-title {
+        display: inline-block;
+        font-size: remCalc(20);
+        margin-bottom: 0;
+        vertical-align: middle;
+    }
+
+
+    //
+    // Navs
+    // -----------------------------------------------------------------------------
+
+    .page-nav,
+    .section-nav {
+        @include u-listHorizontal();
+        background-color: color("greys", "light");
+        font-size: 0;
+        margin-bottom: spacing("single");
+
+        li {
+            font-size: fontSize("smallest");
+            padding: spacing("quarter") spacing("half");
+
+            &:not(:first-child) {
+                border-left: 1px solid color("whites");
+            }
+        }
+    }
+
+    .section-nav {
+        @include u-listHorizontal();
+    }
+
+    //
+    // Codes
+    // -----------------------------------------------------------------------------
+
+    .codeExample {
+
+    }
+
+    .exampleOutput {
+        border: container("border");
+        border-width: 1px 0;
+        padding: spacing("single") 0;
+        position: relative;
+    }
+
+    .codeBlock {
+        background-color: color("whites");
+        margin-bottom: spacing("double");
+        padding: spacing("single");
+    }
+
+    .codeExampleSassFile .codeBlock {
+        max-height: spacing("double")*2;
+        overflow: auto;
+    }
+
+    .codeTable {
+
+        table {
+            table-layout: fixed;
+            width: 100%;
+        }
+
+        th {
+            font-weight: normal;
+            padding: spacing("half");
+            text-align: left;
+        }
+
+        th,
+        td {
+            vertical-align: middle;
+            width: 50%;
+        }
+
+        .exampleOutput {
+            border: none;
+            padding: 0;
+        }
+
+        .codeBlock {
+            margin: 0;
+            padding: spacing("half");
+        }
+    }
+
+}
+
+
+

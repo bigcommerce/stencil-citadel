@@ -1,0 +1,26 @@
+---
+default:
+  - "build"
+
+build:
+  - "clean:build"
+  - "copy:build"
+  - "scsslint"
+  - "sass"
+  - "hologram"
+
+deploy:
+  - "build"
+  - "clean:release"
+  - "copy:release"
+
+release:
+  - "checkbranch:master"
+  - "prompt:deploy"
+
+run:
+  - "build"
+  - "clean:release"
+  - "copy:release"
+  - "browserSync"
+  - "watch"

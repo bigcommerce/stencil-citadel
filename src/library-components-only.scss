@@ -1,0 +1,42 @@
+// Library Components Only
+// -----------------------------------------------------------------------------
+//
+// Purpose: A Library file designed to only expose components to the target app
+// using the library. This means you must include the settings individually, but
+// allows full customisation of the library at a Pattern Lab level.
+//
+// -----------------------------------------------------------------------------
+
+
+// =============================================================================
+// Foundation Library itself
+// =============================================================================
+
+// Foundation (5.4.4)
+@import "vendor/foundation/foundation";
+
+
+// Now we start including output-able CSS
+
+// =============================================================================
+// RESET
+// =============================================================================
+
+// Normalize (3.0.2)
+@import "vendor/normalize/normalize";
+
+
+// =============================================================================
+// UTILITIES
+// =============================================================================
+
+// BC Utilities
+@import "utilities/utilities";
+
+
+// =============================================================================
+// COMPONENTS
+// =============================================================================
+
+// All Components
+@import "components/components";
