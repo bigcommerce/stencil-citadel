@@ -6,7 +6,7 @@ Bigcommerce SCSS Framework
 Built based on the Bigcommerce [SASS Style Guide](https://github.com/bigcommerce/sass-style-guide).
 
 # Get started
-First mke sure you have Bower and Grunt installed globally on your machine:
+First make sure you have Bower and Grunt installed globally on your machine:
 ```
 npm install -g grunt-cli && npm install -g bower
 ```
